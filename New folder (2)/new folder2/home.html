@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Department Home - College Management</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      /* Remove gradient background for video effect */
+      background: #000;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .line {
+      margin: 10px 0;
+      font-size: 1.2em;
+      color: #fff;
+      text-shadow: 0 0 8px #8e44ad;
+    }
+
+    .management-section {
+      margin-top: 40px;
+    }
+
+    .management-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: rgba(255,255,255,0.85);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      width: 200px;
+      padding: 20px;
+      transition: transform 0.2s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #6c3483;
+      font-weight: bold;
+    }
+
+    /* Video background styling */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Purple universe video background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <header>
+    <img src="logo.png" alt="Karnataka Government Logo" class="logo">
+    <h1>Department of Information Science</h1>
+  </header>
+  <div class="container">
+    <div class="line">Welcome to the College Management Portal</div>
+    <div class="line">Department of Information Science</div>
+    <div class="line">Organizing academics with technology and transparency</div>
+    <div class="management-section">
+      <h2>College Management Sections</h2>
+      <div class="management-grid">
+        <div class="card"><a href="attendence.html">Attendance</a></div>
+        <div class="card"><a href="assignment.html">Assignments</a></div>
+        <div class="card"><a href="result.html">Results</a></div>
+        <div class="card"><a href="notice.html">Notices</a></div>
+        <div class="card"><a href="event.html">Events</a></div>
+        <div class="card"><a href="profile.html">Profile</a></div>
+      </div>
+    </div>
+  </div>
